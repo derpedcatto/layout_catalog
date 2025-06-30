@@ -1,0 +1,27 @@
+.site-main {
+  display: grid;
+  box-sizing: border-box;
+  justify-items: center;
+
+  margin: 0;
+  padding: 50px 40px 72px;
+  gap: 46px 48px;
+
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding: 50px 128px 72px;
+  }
+}
